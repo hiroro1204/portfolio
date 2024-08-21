@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神社オリジナルサイト</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="/img/logo.png" alt="ロゴ">
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="pc-links">
+                <li><a href="#">アクセス</a></li>
+                <li><a href="#">境内マップ</a></li>
+            </ul>
+
+            <div class="hamburger-menu-wrapper">
+                <ul class="hamburger-menu-links">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">瑞穂神社について</a></li>
+                    <li><a href="#">縁結び祭り・瑞穂水祭り</a></li>
+                    <li><a href="#">お知らせ</a></li>
+                    <li><a href="#">ご祈祷・ご祈願</a></li>
+                    <li><a href="#">授与品</a></li>
+                    <li><a href="#">境内マップ</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            
+            </div>
+
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="key-visual">
+        <h1>瑞穂神社</h1>
+        <ul class="fade">
+            <li><img src="img/keyvisual_1.jpg" alt="神社の写真"></li>
+            <li><img src="img/keyvisual_2.jpg" alt="神社の写真"></li>
+            <li><img src="img/keyvisual_3.jpg" alt="神社の写真"></li>
+        </ul>
+        
+    </div>
+    
+    <main>
+        <section id="news" class="news-section section-with-margin">
+            <h3 class="section-title">
+                <img src="img/heading-icon.png" alt="流れるアイコン" class="heading-icon">お知らせ
+            </h3>
+            <ul class="news-list">
+                <li class="news-item">
+                    <img src="img/news_4.jpg" alt="">
+                    <time class="news-date" datetime="2024-07-01">2024.7.1</time>
+                    <h4 class="news-title">夏祭りのお知らせ</h4>
+                </li>
+                <li class="news-item">
+                    <img src="img/news_2.jpg" alt="">
+                    <time class="news-date" datetime="2024-07-01">2024.7.1</time>
+                    <h4 class="news-title">夏祭りのお知らせ</h4>
+                </li>
+                <li class="news-item">
+                    <img src="img/news_3.jpg" alt="">
+                    <time class="news-date" datetime="2024-07-01">2024.7.1</time>
+                    <h4 class="news-title">夏祭りのお知らせ</h4>
+                </li>
+                <li class="news-item">
+                    <img src="img/news_1.jpg" alt="">
+                    <time class="news-date" datetime="2024-07-01">2024.7.1</time>
+                    <h4 class="news-title">夏祭りのお知らせ</h4>
+                </li>
+                <li class="news-item">
+                    <img src="img/news_4.jpg" alt="">
+                    <time class="news-date" datetime="2024-07-01">2024.7.1</time>
+                    <h4 class="news-title">夏祭りのお知らせ</h4>
+                </li>
+                <li class="news-item">
+                    <img src="img/news_2.jpg" alt="">
+                    <time class="news-date" datetime="2024-07-01">2024.7.1</time>
+                    <h4 class="news-title">夏祭りのお知らせ</h4>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about" class="about-section section-with-margin">
+            <span>
+                <div class="about-inner">
+                    <h2 class="about-heading">心を結ぶ、瑞穂の縁</h2>
+                    <p class="about-text">
+                        瑞穂神社は、昭和三十年設立の結びの神様を祀る神社です。大国主大神様は「福の神様」として信仰され、縁結びでも
+                        有名です。桜や紅葉が美しい自然に囲まれています。
+                    </p>
+                    <a href="#" class="btn btn-primary">瑞穂神社について</a>
+                </div>
+            </span>
+        </section>
+
+        <section id="festival" class="festival-section">
+            <div class="wrapper">
+                <article class="festival-item">
+                    <a href="#" class="festival-link">
+                        <div class="festival-description">
+                            <h3 class="section-title">
+                                <img src="img/heading-icon.png" alt="流れるアイコン" class="heading-icon">
+                                縁結び祭り<span>心を結ぶ特別な一日</span>
+                            </h3>
+                            <p>
+                                毎年春に行われる特別な祭りです。
+                                <br>縁結びの祈願式で、特別な御神楽が奉納され、参拝者は神職による祝詞を受けます。
+                            </p>
+                        </div>
+                        <div class="festival-image">
+                            <img src="img/festival_1.jpg" alt="さくらの写真">
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="festival-item">
+                    <a href="#" class="festival-link">
+                        <div class="festival-description">
+                            <h3 class="section-title">
+                                <img src="img/heading-icon.png" alt="流れるアイコン" class="heading-icon">
+                                瑞穂水祭り<span>清らかな水で心身を清める日</span>
+                            </h3>
+                            <p>
+                                夏の盛りに行われる伝統的なお祭りです。
+                                <br>境内にある清らかな湧水を中心に行われ、参拝者はその水で心身を清め、健康と繁栄を祈願します。
+                                水に関連した御神楽の奉納や、特別な御朱印の授与も行われます。
+                            </p>
+                        </div>
+                        <div class="festival-image">
+                            <img src="img/festival_2.jpg" alt="川の写真">
+                        </div>
+                    </a>
+                </article>
+                
+            </div>
+            <div class="festival-background-box"></div>
+        </section>
+
+        <section id="services" class="services-section section-with-margin">
+            <!-- ご祈祷やお守りへのリンク -->
+            <div class="services-links">
+                <a href="#" class="services-link">
+                    <div class="services-container">
+                        <h3>ご祈祷</h3>
+                        <img src="img/services_1.png" alt="木札の写真">
+                    </div>
+                </a>
+    
+                <a href="#" class="services-link">
+                    <div class="services-container">
+                        <h3>お守り</h3>
+                        <img src="img/services_2.png" alt="おみくじの写真">
+                    </div>
+                </a>
+    
+                <a href="#" class="services-link">
+                    <div class="services-container">
+                        <h3>写真集</h3>
+                        <img src="img/services_3.png" alt="鳥居">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="access" class="access-section section-with-margin">
+            <div class="wrapper">
+                <h3 class="section-title">
+                    <img src="img/heading-icon.png" alt="流れるアイコン" class="heading-icon">アクセス
+                </h3>
+                <div class="access-inner">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8172322332167!2d139.7669980156502!3d35.66377048019526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1615045010907!5m2!1sja!2sjp" 
+                            title="神社の地図"
+                            width="100%" 
+                            height="100%" 
+                            style="border: 1px;" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="access-text">
+                        <address>〒920-1234<br>石川県金沢市瑞穂町1-2-3</address>
+                        <p class="access-description">
+                            瑞穂駅より徒歩5分
+                            <br>北陸自動車道 金沢西ICから約20分
+                        </p>
+                        <a href="#" class="btn btn-primary">アクセス詳細</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-with-margin">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="/img/logo.png" alt="ロゴ">
+            </div>
+            <div class="footer-contact">
+                <ul class="contact-details">
+                    <li>TEL.03-1234-5678</li>
+                    <li>FAX.03-8765-4321</li>
+                    <li class="opening-hours">開門時間 /全日9:00～17:00</li>
+                </ul>
+                <a href="#" class="btn btn-primary">お問い合わせ</a>
+            </div>
+        </div>
+        <p class="js-scroll scroll-top scroll-view"><a href="#about">Scroll</a></p>
+        <p class="js-pagetop scroll-top"><a href="#">Top</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
