@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神社オリジナルサイト</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="img/logo.png" alt="ロゴ">
+        </div>
+
+        <nav class="nav-menu">
+            <ul class="pc-links">
+                <li><a href="#">アクセス</a></li>
+                <li><a href="#">境内マップ</a></li>
+            </ul>
+
+            <div class="hamburger-menu-wrapper">
+                <ul class="hamburger-menu-links">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">瑞穂神社について</a></li>
+                    <li><a href="#">縁結び祭り・瑞穂水祭り</a></li>
+                    <li><a href="#">お知らせ</a></li>
+                    <li><a href="#">ご祈祷・ご祈願</a></li>
+                    <li><a href="#">授与品</a></li>
+                    <li><a href="#">境内マップ</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            
+            </div>
+
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="key-visual">
+        <h1>瑞穂神社</h1>
+        <ul class="fade">
+            <li><img src="img/keyvisual_1.jpg" alt="神社の写真"></li>
+            <li><img src="img/keyvisual_2.jpg" alt="神社の写真"></li>
+            <li><img src="img/keyvisual_3.jpg" alt="神社の写真"></li>
+        </ul>
+        
+    </div>
+    
+    <main>
+        <form action="/submit_contact" method="post">
+            <div class="form-group">
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="category">お問い合わせ内容のカテゴリー</label>
+                <select id="category" name="category" required>
+                    <option value="general">一般的なお問い合わせ</option>
+                    <option value="ceremony">ご祈祷・ご祈願について</option>
+                    <option value="event">イベントについて</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group privacy-form">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">プライバシーポリシーに同意する</label>
+            </div>
+
+            <button type="submit">送信する</button>
+        </form>
+    </main>
+
+    <footer class="section-with-margin">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="ロゴ">
+            </div>
+            <div class="footer-contact">
+                <ul class="contact-details">
+                    <li>TEL.03-1234-5678</li>
+                    <li>FAX.03-8765-4321</li>
+                    <li class="opening-hours">開門時間 /全日9:00～17:00</li>
+                </ul>
+                <a href="#" class="btn btn-primary">お問い合わせ</a>
+            </div>
+        </div>
+        <p class="js-scroll scroll-top scroll-view"><a href="#about">Scroll</a></p>
+        <p class="js-pagetop scroll-top"><a href="#">Top</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
