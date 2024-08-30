@@ -200,7 +200,7 @@ header{
     position: relative;
 }
 
-.key-visual h1 {
+.page-title {
     writing-mode: vertical-lr;
     position: absolute;
     top: calc(50% - 128px);
