@@ -1,17 +1,73 @@
+/* page-intro-visual */
 
-main {
-    padding: 2rem;
+.page-intro-visual{
+    position: relative;
+    width: 100%;   
+    height: 65vh;
 }
 
-form{
+.page-intro-visual img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-page-title{
+    font-size: 32px;
+}
+
+/* 共通 */
+
+main{
+    padding-top: 100px;
     width: 90%;
     max-width: 768px;
     margin-inline: auto;
     text-align: center;
 }
 
+#telephone .section-title,
+#mail .section-title{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+/* telephone */
+
+#telephone{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+#telephone .telephone-text{
+    text-align: left;
+    margin-right: 1em;
+}
+
+.telephone-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telephone-link{
+    border: 1px solid #ccc;;
+    padding: 1em;
+}
+
+.number{
+    font-size: 2em;
+}
+
+.phone-icon{
+    width: 1.5em;
+    margin-right: 1em;
+}
+
+/* #mail */
+
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
     display: flex;
 }
 
@@ -58,4 +114,52 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+/* SPデザイン */
+
+@media(max-width:840px){
+    .telephone-inner{
+        flex-direction: column;
+    }
+
+    .telephone-link{
+        margin-top: 48px;
+    }
+
+    .form-group{
+        flex-direction: column;
+    }
+    
+    .privacy-form{
+        flex-direction: row;
+    }
+    
+    input, select, textarea{
+        width: 100%;
+    }
+    
+    label{
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media(max-width:580px){
+    .number{
+        font-size: 1.5em;
+    }
+
+    #telephone .section-title,
+    #mail .section-title{
+        font-size: 1.5rem;
+    }
+
+    #telephone .section-title img,
+    #mail .section-title img{
+        width: 40px;
+        height: 40px;
+        top: 0;
+        left: -50px;
+    }
 }
