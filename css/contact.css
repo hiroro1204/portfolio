@@ -17,12 +17,8 @@
 
 /* 共通 */
 
-main{
-    padding-top: 100px;
-    width: 90%;
-    max-width: 768px;
-    margin-inline: auto;
-    text-align: center;
+main {
+    padding: 2rem;
 }
 
 #telephone .section-title,
@@ -66,9 +62,17 @@ main{
 
 /* #mail */
 
+#mail{
+    width: 90%;
+    max-width: 768px;
+    margin-inline: auto;
+    text-align: center;
+}
+
 .form-group {
     margin-bottom: 1.5em;
     display: flex;
+    align-items: center;
 }
 
 label {
@@ -80,7 +84,6 @@ label {
 input, select, textarea {
     width: 80%;
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
